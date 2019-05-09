@@ -30,8 +30,7 @@ class Artist
       if artist != nil
         artist
       else
-        artist = self.new(name)
-        artist.save
+        self.new(name)
     end
   end
 
