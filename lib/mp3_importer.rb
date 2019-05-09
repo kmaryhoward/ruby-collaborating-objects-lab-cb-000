@@ -12,8 +12,6 @@ class MP3Importer
 
   def import
     @filenames.each do |file|
-      artist_name = file.split(" - ")[0]
-      Artist.find_or_create_by_name(artist_name)
       song = file.split(" - ")[1]
       Song.new_by_filename(song)
       
