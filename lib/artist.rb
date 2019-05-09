@@ -33,7 +33,6 @@ class Artist
       else
         self.new(name)
     end
-    @all
   end
 
   def print_songs
