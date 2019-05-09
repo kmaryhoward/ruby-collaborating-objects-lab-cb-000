@@ -20,7 +20,7 @@ class Song
     artist_name_string = filename.split(" - ")[0]
     song.artist_name(artist_name_string)
     artist = Artist.find_or_create_by_name(artist_name_string)
-    
+
   end
 
 
