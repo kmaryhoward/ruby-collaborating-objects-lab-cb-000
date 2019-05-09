@@ -14,6 +14,8 @@ class MP3Importer
     @filenames.each do |file|
       song = file.split(" - ")[1]
       Song.new_by_filename(song)
+      artist = file.split(" - ")[0]
+      Artist.find_or_create_by_name(artist)
 
   end
 end
